@@ -1,0 +1,12 @@
+PIP INSTALL 
+
+asyncio
+base64
+json
+websockets
+os
+dotenv 
+FUNCTION_MAP
+
+csv
+os
