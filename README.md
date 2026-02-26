@@ -12,6 +12,9 @@ The architecture integrates Twilio for telephony services, Deepgram for real-tim
 This project demonstrates how modern AI tools can be integrated with cloud telephony to build scalable, intelligent, and real-world deployable voice automation systems.
 
 📘 FULL SYSTEM EXPLANATION (DETAILED)
+
+
+
 1️⃣ Problem Statement
 
 Traditional pharmacy systems require:
@@ -35,6 +38,8 @@ Get real-time automated assistance
 The problem is:
 
 How can we build an intelligent, automated pharmacy assistant that can interact with customers over phone calls in real time?
+
+
 
 2️⃣ Proposed Solution
 
@@ -62,6 +67,8 @@ Python backend → Executes pharmacy logic
 
 CSV storage → Stores orders
 
+
+
 3️⃣ System Architecture
 
 Here is the complete flow:
@@ -85,6 +92,8 @@ Deepgram (Text-to-Speech)
 Twilio
        ↓
 User Hears Response
+
+
 4️⃣ Detailed Component Explanation
 🔷 A. Twilio (Telephony Layer)
 
@@ -110,6 +119,8 @@ Plays audio responses back to caller
 
 Without Twilio, the AI cannot communicate over real phone networks.
 
+
+
 🔷 B. ngrok (Public Tunnel)
 
 The Python server runs on:
@@ -126,9 +137,13 @@ Connects Twilio cloud to local server
 
 This enables real-time development without deployment.
 
+
+
 🔷 C. Deepgram (Speech Intelligence)
 
 Deepgram performs two major tasks:
+
+
 
 1. Speech-to-Text (STT)
 
@@ -144,6 +159,8 @@ User says:
 Deepgram converts to:
 
 "I want to order aspirin"
+
+
 2. Text-to-Speech (TTS)
 
 Converts:
@@ -160,6 +177,8 @@ Deepgram acts as:
 Ears (listening)
 
 Mouth (speaking)
+
+
 
 🔷 D. OpenAI (Intelligence Layer)
 
@@ -186,6 +205,8 @@ OpenAI acts as:
 
 Brain of the system
 
+
+
 🔷 E. Python Backend (Business Logic)
 
 The backend:
@@ -209,6 +230,9 @@ Orders are stored in:
 orders.csv
 
 This ensures persistent storage.
+
+
+
 
 5️⃣ Real-Time Streaming Process
 
@@ -240,6 +264,9 @@ User hears response
 
 This entire process happens in real time.
 
+
+
+
 6️⃣ Technical Features
 
 ✔ Real-time WebSocket streaming
@@ -249,6 +276,8 @@ This entire process happens in real time.
 ✔ Persistent order storage
 ✔ Cloud-integrated telephony
 ✔ Human-like voice synthesis
+
+
 
 7️⃣ Advantages of the System
 
@@ -264,6 +293,8 @@ Real-time processing
 
 Cost-effective automation
 
+
+
 8️⃣ Limitations
 
 Requires stable internet
@@ -273,6 +304,9 @@ Depends on API services
 Voice recognition accuracy may vary
 
 ngrok URL changes in free version
+
+
+
 
 9️⃣ Future Improvements
 
@@ -287,6 +321,8 @@ Integrate database (SQLite/PostgreSQL)
 Add analytics dashboard
 
 Improve conversational memory
+
+
 
 🔟 Conclusion Summary
 
