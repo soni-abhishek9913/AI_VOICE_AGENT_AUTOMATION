@@ -332,6 +332,8 @@ This project demonstrates how modern AI technologies can be integrated with clou
 
 #IMPORTANT NOTE YOU NEED TO CREATE ACCOUNT IN DEEPGRAM AND TWILIO AND NGROK
 
+add your deepgram API KEY in .env file #to do not disclose to anyone
+
 
 DEEPGRAM FOR AI AGENT
 TWILIO FOR NUMBER 
